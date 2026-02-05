@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OFFICIAL GAS | $GAS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #050505;
+            color: #ffffff;
+            scroll-behavior: smooth;
+        }
+
+        .gas-gradient {
+            background: linear-gradient(180deg, #00ff88 0%, #00bdff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        @keyframes bounce-slow {
+            0%, 100% { transform: translateY(-10%); }
+            50% { transform: translateY(10%); }
+        }
+
+        .animate-bounce-slow {
+            animation: bounce-slow 2s infinite;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex flex-col items-center justify-center text-center p-6">
+        <div class="mb-4">
+            <span class="px-4 py-1 rounded-full border border-green-500/30 bg-green-500/10 text-green-400 text-xs font-bold tracking-widest uppercase">
+                Fuel for the Moon
+            </span>
+        </div>
+
+        <h1 class="text-6xl md:text-9xl font-extrabold mb-6 tracking-tighter">
+            OFFICIAL <span class="gas-gradient">GAS</span>
+        </h1>
+
+        <p class="text-xl md:text-2xl text-gray-400 max-w-2xl font-light mb-12">
+            The tank is full. The engine is running. Don't get left at the station.
+        </p>
+
+        <!-- CTA and Scroll Prompt -->
+        <div class="flex flex-col items-center gap-8">
+            <a href="https://pump.fun/coin/9yJZwejZtbaoxrx4LR3LsXaWbkoUqSexYLof14xpump" target="_blank" class="px-8 py-4 bg-white text-black font-black rounded-full hover:scale-105 transition-transform text-lg">
+                BUY $GAS NOW
+            </a>
+
+            <div class="scroll-indicator flex flex-col items-center gap-2">
+                <span class="text-xs tracking-widest text-gray-500 uppercase">Don't stop now</span>
+                <svg class="w-8 h-8 text-green-400 animate-bounce-slow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Section -->
+    <section id="why" class="min-h-screen flex flex-col items-center justify-center p-6 bg-zinc-950">
+        <h2 class="text-4xl md:text-6xl font-black mb-16 text-center">WHY <span class="text-green-500">THROTTLING?</span></h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl w-full">
+            <div class="glass-card p-10 rounded-3xl">
+                <div class="text-4xl mb-4">⚡</div>
+                <h3 class="text-xl font-bold mb-2">High Octane</h3>
+                <p class="text-gray-400">Zero taxes. Full transparency. Pure momentum built for the degen fast lane.</p>
+            </div>
+
+            <div class="glass-card p-10 rounded-3xl">
+                <div class="text-4xl mb-4">🔥</div>
+                <h3 class="text-xl font-bold mb-2">No Brake Check</h3>
+                <p class="text-gray-400">Liquidity burned forever. Contract renounced. We only move forward.</p>
+            </div>
+
+            <div class="glass-card p-10 rounded-3xl">
+                <div class="text-4xl mb-4">⛽</div>
+                <h3 class="text-xl font-bold mb-2">Infinite Range</h3>
+                <p class="text-gray-400">Community-driven growth designed to outlast the typical hype cycles.</p>
+            </div>
+        </div>
+
+        <div class="mt-20 flex flex-col items-center gap-4">
+            <p class="text-gray-500 font-medium italic">Keep going, the roadmap is below...</p>
+            <div class="w-px h-24 bg-gradient-to-b from-green-500 to-transparent"></div>
+        </div>
+    </section>
+
+    <!-- Tokenomics -->
+    <section class="min-h-screen flex flex-col items-center justify-center p-6">
+        <div class="max-w-4xl w-full text-center">
+            <h2 class="text-4xl md:text-6xl font-black mb-12">THE <span class="text-blue-400">MILEAGE</span></h2>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
+                <div class="p-6">
+                    <div class="text-3xl font-black">1B</div>
+                    <div class="text-xs text-gray-500 uppercase tracking-widest">Supply</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-3xl font-black">0%</div>
+                    <div class="text-xs text-gray-500 uppercase tracking-widest">Buy Tax</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-3xl font-black">0%</div>
+                    <div class="text-xs text-gray-500 uppercase tracking-widest">Sell Tax</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-3xl font-black">100%</div>
+                    <div class="text-xs text-gray-500 uppercase tracking-widest">Burned</div>
+                </div>
+            </div>
+
+            <div class="p-8 glass-card rounded-2xl border-dashed border-2 border-white/20">
+                <p class="text-sm text-gray-400 mb-2 uppercase tracking-tighter">Contract Address</p>
+                <code id="ca-value" class="text-xs md:text-lg text-green-400 break-all select-all cursor-pointer" onclick="copyCA()">
+                    9yJZwejZtbaoxrx4LR3LsXaWbkoUqSexYLof14xpump
+                </code>
+            </div>
+        </div>
+
+        <div class="mt-20 text-center">
+            <p class="text-gray-600 mb-4 uppercase text-xs tracking-[0.5em]">The Finish Line</p>
+            <a href="https://x.com/officialdotgas" target="_blank" class="text-5xl md:text-8xl font-black hover:text-green-400 transition-colors uppercase">
+                Follow us on X
+            </a>
+        </div>
+    </section>
+
+    <footer class="p-12 text-center text-gray-600 text-xs border-t border-white/5">
+        &copy; 2024 OFFICIAL GAS. No utility. No promises. Just vibes and high octane.
+    </footer>
+
+    <script>
+        const CA = '9yJZwejZtbaoxrx4LR3LsXaWbkoUqSexYLof14xpump';
+
+        function copyCA() {
+            const el = document.createElement('textarea');
+            el.value = CA;
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+
+            const codeBox = document.getElementById('ca-value');
+            const originalText = codeBox.innerText;
+            codeBox.innerText = 'COPIED!';
+            setTimeout(() => {
+                codeBox.innerText = originalText;
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
